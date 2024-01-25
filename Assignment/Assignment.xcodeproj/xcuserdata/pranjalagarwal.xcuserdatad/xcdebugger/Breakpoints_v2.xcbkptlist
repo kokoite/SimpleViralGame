@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5B5524AD-52A1-4D50-B542-0BA2CEF1C66E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3074B489-B3F5-4A6B-B16F-49BABC181EB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "deleteFile(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3074B489-B3F5-4A6B-B16F-49BABC181EB1 - 36dd9581fa467a5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment.LRUCache.deleteFile(at: Swift.String) -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "804">
+               </Location>
+               <Location
+                  uuid = "3074B489-B3F5-4A6B-B16F-49BABC181EB1 - 36dd9581fa467bbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment.LRUCache.deleteFile(at: Swift.String) -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AEE611B-C85E-4F9A-A84D-CFDD38762C21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "storeImageData(using:and:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1AEE611B-C85E-4F9A-A84D-CFDD38762C21 - 9f5388ccb1b7566"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Assignment.LRUCache.clearCache() -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1AEE611B-C85E-4F9A-A84D-CFDD38762C21 - 4d4095323efe2c92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Assignment.LRUCache.storeImageData(using: Swift.String, and: Foundation.Data) async -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C4640D1-BCA1-4D5B-8DF6-A5631050466F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "storeImageData(using:and:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0C4640D1-BCA1-4D5B-8DF6-A5631050466F - 4d4095323efe2de8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Assignment.LRUCache.storeImageData(using: Swift.String, and: Foundation.Data) async -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1052">
+               </Location>
+               <Location
+                  uuid = "0C4640D1-BCA1-4D5B-8DF6-A5631050466F - 4d4095323efe2de8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Assignment.LRUCache.storeImageData(using: Swift.String, and: Foundation.Data) async -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D9FFCD6-A3FA-40F8-A813-C20825D0D971"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "getAllCached()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7D9FFCD6-A3FA-40F8-A813-C20825D0D971 - 36dd9581fa467ada"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment.LRUCache.deleteFile(at: Swift.String) -&gt; ()"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "7D9FFCD6-A3FA-40F8-A813-C20825D0D971 - 62d49e03abc3487d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment.LRUCache.getAllCached() -&gt; Swift.Array&lt;Foundation.Data&gt;"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1796">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F93F8E8E-BA8A-47C0-ABD9-C07C9F1B5873"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getAllCached()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F93F8E8E-BA8A-47C0-ABD9-C07C9F1B5873 - 62d49e03abc3468b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment.LRUCache.getAllCached() -&gt; Swift.Array&lt;Foundation.Data&gt;"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "988">
+               </Location>
+               <Location
+                  uuid = "F93F8E8E-BA8A-47C0-ABD9-C07C9F1B5873 - 62d49e03abc3468b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment.LRUCache.getAllCached() -&gt; Swift.Array&lt;Foundation.Data&gt;"
+                  moduleName = "Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranjalagarwal/Desktop/SimpleViralGame/Assignment/Assignment/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "996">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
