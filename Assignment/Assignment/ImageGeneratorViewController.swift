@@ -17,11 +17,10 @@ final class ImageGeneratorViewController: UIViewController, ImageGeneratorDispla
     var generateButton: UIButton!
     var generatedImage: UIImageView!
     var cacheButton: UIButton!
-    let viewModel: HomeViewModel
+    var viewModel: ImageGeneratorBusinessLogic?
 
     // MARK :- Activity lifecycle methods
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        viewModel = HomeViewModel()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
     }
@@ -40,32 +39,32 @@ final class ImageGeneratorViewController: UIViewController, ImageGeneratorDispla
     }
 
     func displayError(using error: Error?) {
-
+        let alertAction = UIAlertAction(title: "Okay", style: .cancel)
+        guard let error = error as? ApiError else {
+            let alert = UIAlertController(title: "Something went wrong", message: "Please try again later", preferredStyle: .alert)
+            alert.addAction(alertAction)
+            navigationController?.present(alert, animated: true)
+            return
+        }
+        let alert = UIAlertController(title: error.title, message: error.subtitle, preferredStyle: .alert)
+        alert.addAction(alertAction)
+        navigationController?.present(alert, animated: true)
     }
 
     @objc func generateButtonClicked() {
-        viewModel.fetchImageAndStoreInCache()
-    }
-
-    @objc func getAllImageClicked() {
-        let controller = CachedImageViewController()
-        navigationController?.pushViewController(controller, animated: true)
-    }
-
-    @objc func clearButton() {
-        LRUCache.shared.clearAll()
+        viewModel?.fetchImageAndStoreInCache()
     }
 
     private func setup() {
+        let viewModel = ImageGeneratorViewModel()
         viewModel.controller = self
+        self.viewModel = viewModel
     }
 
     private func setupViews() {
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
         setupImageView()
         setupGenerateButton()
-        setupImagesButton()
-        setupClearButton()
     }
 
     private func setupImageView() {
@@ -93,30 +92,5 @@ final class ImageGeneratorViewController: UIViewController, ImageGeneratorDispla
         let top = button.topAnchor.constraint(equalTo: generatedImage.bottomAnchor, constant: 20)
         NSLayoutConstraint.activate([centerX, top])
         button.addTarget(self, action: #selector(generateButtonClicked), for: .touchUpInside)
-    }
-
-    private func setupClearButton() {
-        let config = UIButton.Configuration.filled()
-        let button = UIButton(configuration: config)
-        button.addTarget(self, action: #selector(clearButton), for: .touchUpInside)
-        button.setTitle("Clear", for: .normal)
-        button.setTranslatesMask()
-        view.addSubview(button)
-        let centerX = button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let top = button.topAnchor.constraint(equalTo: cacheButton.bottomAnchor, constant: 20)
-        NSLayoutConstraint.activate([centerX, top])
-    }
-
-    private func setupImagesButton() {
-        let config = UIButton.Configuration.filled()
-        let button = UIButton(configuration: config)
-        cacheButton = button
-        button.addTarget(self, action: #selector(getAllImageClicked), for: .touchUpInside)
-        button.setTitle("Get all image", for: .normal)
-        button.setTranslatesMask()
-        view.addSubview(button)
-        let centerX = button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let top = button.topAnchor.constraint(equalTo: generateButton.bottomAnchor, constant: 20)
-        NSLayoutConstraint.activate([centerX, top])
     }
 }

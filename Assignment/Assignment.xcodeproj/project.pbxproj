@@ -12,11 +12,13 @@
 		A609B79F2B60C9C700233E99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B79E2B60C9C700233E99 /* ViewController.swift */; };
 		A609B7A42B60C9C800233E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A609B7A32B60C9C800233E99 /* Assets.xcassets */; };
 		A609B7A72B60C9C800233E99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A609B7A52B60C9C800233E99 /* LaunchScreen.storyboard */; };
-		A609B7AF2B60CD0700233E99 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B7AE2B60CD0700233E99 /* HomeViewModel.swift */; };
+		A609B7AF2B60CD0700233E99 /* ImageGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B7AE2B60CD0700233E99 /* ImageGeneratorViewModel.swift */; };
 		A609B7B12B60DB8300233E99 /* View+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B7B02B60DB8300233E99 /* View+Utility.swift */; };
 		A609B7B32B60DEBC00233E99 /* ImageGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B7B22B60DEBC00233E99 /* ImageGeneratorViewController.swift */; };
 		A609B7B52B611A7800233E99 /* CachedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B7B42B611A7800233E99 /* CachedImageViewController.swift */; };
 		A609B7B72B611B2C00233E99 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609B7B62B611B2C00233E99 /* ImageCell.swift */; };
+		A65FA2CF2B62F0E000813CC0 /* CachedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FA2CE2B62F0E000813CC0 /* CachedImageViewModel.swift */; };
+		A65FA2D12B62F46000813CC0 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FA2D02B62F46000813CC0 /* LRUCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,13 @@
 		A609B7A32B60C9C800233E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A609B7A62B60C9C800233E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A609B7A82B60C9C800233E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A609B7AE2B60CD0700233E99 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A609B7AE2B60CD0700233E99 /* ImageGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorViewModel.swift; sourceTree = "<group>"; };
 		A609B7B02B60DB8300233E99 /* View+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Utility.swift"; sourceTree = "<group>"; };
 		A609B7B22B60DEBC00233E99 /* ImageGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorViewController.swift; sourceTree = "<group>"; };
 		A609B7B42B611A7800233E99 /* CachedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageViewController.swift; sourceTree = "<group>"; };
 		A609B7B62B611B2C00233E99 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		A65FA2CE2B62F0E000813CC0 /* CachedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageViewModel.swift; sourceTree = "<group>"; };
+		A65FA2D02B62F46000813CC0 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,9 @@
 				A609B79C2B60C9C700233E99 /* SceneDelegate.swift */,
 				A609B79E2B60C9C700233E99 /* ViewController.swift */,
 				A609B7B22B60DEBC00233E99 /* ImageGeneratorViewController.swift */,
-				A609B7AE2B60CD0700233E99 /* HomeViewModel.swift */,
+				A609B7AE2B60CD0700233E99 /* ImageGeneratorViewModel.swift */,
+				A65FA2D02B62F46000813CC0 /* LRUCache.swift */,
+				A65FA2CE2B62F0E000813CC0 /* CachedImageViewModel.swift */,
 				A609B7B42B611A7800233E99 /* CachedImageViewController.swift */,
 				A609B7B62B611B2C00233E99 /* ImageCell.swift */,
 				A609B7B02B60DB8300233E99 /* View+Utility.swift */,
@@ -153,10 +159,12 @@
 				A609B79F2B60C9C700233E99 /* ViewController.swift in Sources */,
 				A609B7B32B60DEBC00233E99 /* ImageGeneratorViewController.swift in Sources */,
 				A609B7B52B611A7800233E99 /* CachedImageViewController.swift in Sources */,
+				A65FA2D12B62F46000813CC0 /* LRUCache.swift in Sources */,
+				A65FA2CF2B62F0E000813CC0 /* CachedImageViewModel.swift in Sources */,
 				A609B79B2B60C9C700233E99 /* AppDelegate.swift in Sources */,
 				A609B7B72B611B2C00233E99 /* ImageCell.swift in Sources */,
 				A609B79D2B60C9C700233E99 /* SceneDelegate.swift in Sources */,
-				A609B7AF2B60CD0700233E99 /* HomeViewModel.swift in Sources */,
+				A609B7AF2B60CD0700233E99 /* ImageGeneratorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,28 +8,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private let viewModel: HomeViewModel
     private var titleView: UILabel!
     private var generateButton: UIButton!
     private var recentButton: UIButton!
 
     // MARK :- Initializers
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        viewModel = HomeViewModel()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
     required init?(coder: NSCoder) {
-        viewModel = HomeViewModel()
         super.init(coder: coder)
     }
-    
 
     // MARK :- Activity Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         setupViews()
+    }
+
+    @objc func generateImageClicked() {
+        let controller = ImageGeneratorViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+
+    @objc func cachedImageClicked() {
+        let controller = CachedImageViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
 
     private func setupViews() {
@@ -54,6 +60,7 @@ class ViewController: UIViewController {
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20)
         configuration.cornerStyle = .capsule
         let button = UIButton(configuration: configuration)
+        button.addTarget(self, action: #selector(generateImageClicked), for: .touchUpInside)
         generateButton = button
         button.layer.cornerRadius = 12
         view.addSubview(button)
@@ -70,6 +77,7 @@ class ViewController: UIViewController {
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
         configuration.cornerStyle = .capsule
         let button = UIButton(configuration: configuration)
+        button.addTarget(self, action: #selector(cachedImageClicked), for: .touchUpInside)
         recentButton = button
         view.addSubview(button)
         button.setTranslatesMask()
