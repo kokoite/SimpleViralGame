@@ -23,8 +23,6 @@ final class LRUCache {
         let fileName = UUID().uuidString + ".jpg"
         let fileURL = documentsDirectory.appendingPathComponent(fileName)
         try value.write(to: fileURL)
-        let fileExists = FileManager.default.fileExists(atPath: fileURL.path)
-        print("file exists \(fileExists)")
         if cache.count == 20 {
             let node =  cache[0]
             try await deleteFile(at: node.path)
@@ -70,8 +68,6 @@ final class LRUCache {
         var images: [Data] = []
         for node in cac {
             let path = node.path
-            let fileExists = FileManager.default.fileExists(atPath: path)
-            print("file exists for all cache \(fileExists)")
             let data = try? Data(contentsOf: URL(filePath: path))
             if let data {
                 images.append(data)
@@ -81,8 +77,6 @@ final class LRUCache {
     }
 
     private func deleteFile(at path: String) async throws {
-        let fileExists = FileManager.default.fileExists(atPath: path)
-        print("file exists \(fileExists)")
         try FileManager.default.removeItem(atPath: path)
     }
 }

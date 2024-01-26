@@ -23,7 +23,6 @@ final class CachedImageViewModel: CachedImageViewBusinessLogic {
                 self.response = try await LRUCache.shared.getAllCached()
             } catch {
                 self.error = error
-                print("error is \(error.localizedDescription)")
             }
             refreshGetCachedImage()
         }
@@ -35,7 +34,6 @@ final class CachedImageViewModel: CachedImageViewBusinessLogic {
                 try await LRUCache.shared.clearAll()
             } catch {
                 self.error = error
-                print("Error is \(error.localizedDescription)")
             }
             refreshDeletedCached()
         }

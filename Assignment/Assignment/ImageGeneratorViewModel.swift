@@ -60,7 +60,6 @@ final class ImageGeneratorViewModel: ImageGeneratorBusinessLogic {
                 try await fetchImageUsing(url: response.message)
             } catch {
                 self.error = error
-                print("error is \(error.localizedDescription)")
             }
             refreshUI()
         }
