@@ -81,6 +81,7 @@ final class ImageGeneratorViewController: UIViewController, ImageGeneratorDispla
 
     private func setupGenerateButton() {
         var config = UIButton.Configuration.filled()
+        config.baseBackgroundColor = UIColor(red: 66/255, green: 134/255, blue: 244/255, alpha: 1)
         config.cornerStyle = .capsule
         config.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
         let button = UIButton(configuration: config)

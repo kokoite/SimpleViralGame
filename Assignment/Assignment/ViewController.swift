@@ -58,10 +58,12 @@ class ViewController: UIViewController {
     private func setupGenerateButton() {
         var configuration = UIButton.Configuration.filled()
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20)
+        configuration.baseBackgroundColor = UIColor(red: 66/255, green: 134/255, blue: 244/255, alpha: 1)
         configuration.cornerStyle = .capsule
         let button = UIButton(configuration: configuration)
         button.addTarget(self, action: #selector(generateImageClicked), for: .touchUpInside)
         generateButton = button
+        button.backgroundColor = UIColor(red: 66/255, green: 134/255, blue: 234/255, alpha: 1)
         button.layer.cornerRadius = 12
         view.addSubview(button)
         button.setTranslatesMask()
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
     private func setupRecentButton() {
         var configuration = UIButton.Configuration.filled()
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
+        configuration.baseBackgroundColor = UIColor(red: 66/255, green: 134/255, blue: 244/255, alpha: 1)
         configuration.cornerStyle = .capsule
         let button = UIButton(configuration: configuration)
         button.addTarget(self, action: #selector(cachedImageClicked), for: .touchUpInside)
